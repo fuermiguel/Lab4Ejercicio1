@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="android.miguel.lab4elercicio1_1.MainActivity">
+
+    <Button
+        android:text="Generar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="100dp"
+        android:id="@+id/btn_generar" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/btn_generar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="34dp"
+        android:id="@+id/txt_numeroIntroducido"
+        android:hint="Número de 1 a 10" />
+
+    <Button
+        android:text="Comprobar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_numeroIntroducido"
+        android:layout_alignStart="@+id/btn_generar"
+        android:layout_marginTop="37dp"
+        android:id="@+id/btn_comprobar" />
+
+    <TextView
+        android:text="Puntuación"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_comprobar"
+        android:layout_toStartOf="@+id/btn_comprobar"
+        android:layout_marginTop="47dp"
+        android:id="@+id/lbl_puntuacion"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Puntuación máxima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbl_puntuacionMaxima"
+        android:layout_above="@+id/btn_puntuacion"
+        android:layout_alignEnd="@+id/btn_puntuacionMaxima"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:id="@+id/btn_puntuacion"
+        android:layout_below="@+id/lbl_puntuacion"
+        android:layout_alignStart="@+id/lbl_puntuacion"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_puntuacionMaxima"
+        android:textStyle="normal|bold"
+        android:layout_alignBottom="@+id/btn_puntuacion"
+        android:layout_toEndOf="@+id/btn_comprobar"
+        android:layout_marginBottom="10dp" />
+</RelativeLayout>
